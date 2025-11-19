@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Produtos — Cida Oliveira Decor</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <header class="topo">
+    <div class="logo">Cida Oliveira Decor</div>
+    <nav class="menu">
+      <a href="{{ url_for('index') }}">Início</a>
+      <a href="{{ url_for('produtos') }}" class="ativo">Produtos</a>
+      <a href="{{ url_for('sobre') }}">Sobre</a>
+      <a href="{{ url_for('contato') }}">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="section-title">Nossos Produtos</h2>
+    <p style="color:var(--muted); margin-bottom:18px;">Peça orçamento direto pelo WhatsApp — atendimento rápido e personalizado.</p>
+
+    <div class="produtos-container">
+      <div class="produto">
+        <img src="{{ url_for('static', filename='imagens/cortina.jpg') }}" alt="Cortinas">
+        <h3>Cortinas</h3>
+        <p>Tamanhos, tecidos e acabamentos à escolha.</p>
+      </div>
+
+      <div class="produto">
+        <img src="{{ url_for('static', filename='imagens/persiana.jpg') }}" alt="Persianas">
+        <h3>Persianas</h3>
+        <p>Práticas, modernas e fáceis de limpar.</p>
+      </div>
+
+      <div class="produto">
+        <img src="{{ url_for('static', filename='imagens/almofada.jpg') }}" alt="Almofadas">
+        <h3>Almofadas</h3>
+        <p>Capas removíveis e enchimentos variados.</p>
+      </div>
+
+      <div class="produto">
+        <img src="{{ url_for('static', filename='imagens/futon.jpg') }}" alt="Futons">
+        <h3>Futons</h3>
+        <p>Conforto e praticidade em vários tamanhos.</p>
+      </div>
+    </div>
+  </main>
+
+  <a class="whatsapp-fixo" href="https://wa.me/5519989894010?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento." target="_blank">💬</a>
+
+  <footer>
+    © 2025 Cida Oliveira Decor — Cortinas, Persianas, Almofadas e Futons
+  </footer>
+
+</body>
+</html>
