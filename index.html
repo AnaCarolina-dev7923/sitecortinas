@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Cida Oliveira Decor</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -12,20 +12,20 @@
   <header class="topo">
     <div class="logo">Cida Oliveira Decor</div>
     <nav class="menu">
-      <a href="{{ url_for('index') }}" class="ativo">Início</a>
-      <a href="{{ url_for('produtos') }}">Produtos</a>
-      <a href="{{ url_for('sobre') }}">Sobre</a>
-      <a href="{{ url_for('contato') }}">Contato</a>
+      <a href="index.html" class="ativo">Início</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Contato</a>
     </nav>
   </header>
 
   <main>
-    <!-- banner (usa imagem em static/imagens/banner.jpg) -->
+    <!-- banner -->
     <section class="banner">
       <div class="texto">
         <h1>Transforme sua casa com elegância e conforto</h1>
         <p>Cortinas, persianas, almofadas e futons sob medida — acabamento impecável e atendimento com carinho.</p>
-        <a class="btn" href="{{ url_for('produtos') }}">Ver Produtos</a>
+        <a class="btn" href="produtos.html">Ver Produtos</a>
       </div>
     </section>
 
@@ -33,25 +33,25 @@
     <h2 class="section-title">Produtos em destaque</h2>
     <div class="produtos-container">
       <div class="produto">
-        <img src="{{ url_for('static', filename='imagens/cortina.jpg') }}" alt="Cortinas">
+        <img src="cortina.jpg" alt="Cortinas">
         <h3>Cortinas Sob Medida</h3>
         <p>Tecido linho, blackout e voil — sob medida para o seu espaço.</p>
       </div>
 
       <div class="produto">
-        <img src="{{ url_for('static', filename='imagens/persiana.jpg') }}" alt="Persianas">
+        <img src="persiana.jpg" alt="Persianas">
         <h3>Persianas</h3>
         <p>Modelos em PVC, tecido e rolo — práticos e elegantes.</p>
       </div>
 
       <div class="produto">
-        <img src="{{ url_for('static', filename='imagens/almofada.jpg') }}" alt="Almofadas">
+        <img src="almofada.jpg" alt="Almofadas">
         <h3>Almofadas & Capas</h3>
         <p>Cores e estampas para combinar com sua decoração.</p>
       </div>
 
       <div class="produto">
-        <img src="{{ url_for('static', filename='imagens/futon.jpg') }}" alt="Futons">
+        <img src="futon.jpg" alt="Futons">
         <h3>Futons</h3>
         <p>Soluções práticas e confortáveis para sua sala ou quarto.</p>
       </div>
@@ -59,7 +59,8 @@
   </main>
 
   <!-- whatsapp -->
-  <a class="whatsapp-fixo" href="https://wa.me/5519989894010?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" aria-label="WhatsApp">💬</a>
+  <a class="whatsapp-fixo" href="https://wa.me/5519989894010?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento." 
+     target="_blank" aria-label="WhatsApp">💬</a>
 
   <footer>
     © 2025 Cida Oliveira Decor — Cortinas, Persianas, Almofadas e Futons
